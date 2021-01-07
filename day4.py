@@ -26,6 +26,10 @@ def main():
         # if row > 20:
         #     break;
 
+    # Process the final entry in the file
+    if process_entry(entry, True):
+        valid_count = valid_count + 1
+
     print(valid_count)
 
 
