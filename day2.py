@@ -31,7 +31,8 @@ for line in lines:
         #print("Min {}, Max {}, Letter {}, Password {}".format(min, max, letter, password))
 
     # Check policy 2
-    if (password[min - 1] == letter and password[max - 1] != letter) or (password[min - 1] != letter and password[max - 1] == letter):
+    if (password[min - 1] == letter and password[max - 1] != letter) or \
+       (password[min - 1] != letter and password[max - 1] == letter):
         valid_policy_2 = valid_policy_2 + 1
         #print("Pos1 {}, Pos2 {}, Letter {}, Password {}".format(min, max, letter, password))
 
