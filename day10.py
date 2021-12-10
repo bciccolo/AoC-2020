@@ -2,17 +2,13 @@ FILE_NAME = 'day10.dat'
 
 
 def part1():
-    global incomplete_entries
-
-    # Step 1: Find the corrupt tokens
     file = open(FILE_NAME, 'r')
     lines = file.readlines()
 
     jolts = [int(x) for x in lines]
-
     jolts.sort()
 
-    print(jolts)
+    # print(jolts)
 
     singleCount = 0
     tripleCount = 1 # Count the built-in adapter
