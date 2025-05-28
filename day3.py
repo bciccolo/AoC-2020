@@ -17,9 +17,8 @@ def count_trees(x, y):
             # else:
             #     print("row " + str(row) + ": safe")
 
-            position = position + x
-            if position > (len(text) - 1):
-                position = position - len(text)
+            position += x
+            position %= len(text)
 
         row = row + 1
 
